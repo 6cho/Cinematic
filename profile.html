@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Profile</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,500,700|Raleway:500,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+
+<body>
+	
+	<header  style="background-image: url('');">
+		<h1>PROFILE</h1>
+	</header>
+
+	<nav id="nav">		
+		<div style="float:left;"class="text-nav-main title">
+			<a href="index.html" id="titlebtn">CINEMATIC</a>
+		</div>
+		<div style="float:right;"class="text-nav title">
+			 <form id="search" name="search" action="search.html" method="get" >
+				<a href="profile.html">PROFILE</a>
+				<a href="login.html">LOGIN</a>
+                <input type="text" id="searchquery" name="searchquery"class="text-nav border">
+                <input type="submit" id="search_submit" value="SEARCH" onclick="search();"class="text-nav">
+            </form>   
+		</div>
+	</nav>
+	
+	<main class="main">
+
+		<section>
+			<div class="textbox">
+				<div class="row">
+					<div class="col-lg-4"></div>
+					<div class="col-lg-4" >
+						<h2 style="text-align: center;">YOUR ACCOUNT</h2>
+						<div class="border"style="padding:20px;">
+							<table>
+								<tr>
+									<td><h3>NAME</h3></td>
+									<td><p style="padding:0;">Eric Cho</p></td>
+								</tr>
+								<tr>
+									<td><h3>EMAIL</h3></td>
+									<td><p style="padding:0;">eric6cho@gmail.com</p></td>
+								</tr>
+								<tr>
+									<td><h3>PASSWORD</h3></td>
+									<td><p style="padding:0;">**********</p></td>
+								</tr>
+								<tr>
+									<td><h3>ADDRESS</h3></td>
+									<td><p style="padding:0;">355 Riverbend Pkwy</p></td>
+								</tr>
+								<tr>
+									<td><h3>CITY</h3></td>
+									<td><p style="padding:0;">Athens, GA</p></td>
+								</tr>
+								<tr>
+									<td><h3>ZIP CODE</h3></td>
+									<td><p style="padding:0;">30605</p></td>
+								</tr>
+							</table>
+							<a href="edit-profile.html" class="border" style="margin-top: 3vh;">EDIT PROFILE</a>
+						</div>	 
+			        </div>
+					<div class="col-lg-4"></div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+	
+	<footer class="background-red">
+		<p>
+			Authors: Eric Cho and Overton Wright<br>
+			Course: CSCI 4300<br>
+			Term: Fall 2019<br>
+			Professor: Dr. Ahmadzadeh
+		</p>	
+	</footer>
+
+</body>
+</html>
