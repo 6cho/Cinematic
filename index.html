@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cinematic</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,500,700|Raleway:500,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	
+	<header  style="background-image: url('0.jpg');">
+		<h1></h1>
+	</header>
+
+	<nav id="nav">		
+		<div style="float:left;"class="text-nav-main title">
+			<a href="index.html" id="titlebtn">CINEMATIC</a>
+		</div>
+		<div style="float:right;"class="text-nav title">
+			 <form id="search" name="search" action="search.html" method="get" >
+				<a href="profile.html">PROFILE</a>
+				<a href="login.html">LOGIN</a>
+                <input type="text" id="searchquery" name="searchquery"class="text-nav border">
+                <input type="submit" id="search_submit" value="SEARCH" onclick="search();"class="text-nav">
+            </form>   
+		</div>
+	</nav>
+	
+	<main class="main">
+		
+		<section>		
+		
+			<div class="textbox">
+				<h2 style="padding-bottom:0;">WATCH THE LATEST MOVIES NOW</h2>	
+			</div>
+
+			<div style="background-color: rgb(35,35,35);">			
+				<div class="row edges">
+					<div class="col-md-6">
+						<p class="text-red" style="text-align:right;padding:5vh 5vw">
+							Are you searching for the greatest films that are currently showing?<br>
+							Do you want to have the best viewing experience that can be offered?<br>
+							Do you just want something to watch?
+						</p>
+					</div>
+				
+					<div class="col-md-6">
+						<p style="text-align: left; padding:5vh 5vw;">
+							If you said yes to any of these questions, <br>
+							then we got what you are looking for. <br>
+							Scroll down to view our collection of films.
+						</p>
+					</div>
+				</div>			
+			</div>
+
+			<div class="textbox">
+				<h2 style="padding-bottom: 0;">FEATURED FILMS</h2>
+			</div>
+			
+			<ul class="row edges">
+				<li class="col-xl-3 col-sm-6">
+					<div class="ratio3-4" style="background-image: url('1.jpg');">
+						<div class="overlay title">
+							<a href=""class="title">VIEW MOVIE PAGE</a>
+						</div>
+					</div>
+				
+				</li>
+				<li class="col-xl-3 col-sm-6">
+					<div class="ratio3-4" style="background-image: url('2.jpg');">
+						<div class="overlay title">
+							<a href=""class="title">VIEW MOVIE PAGE</a>
+						</div>
+					</div>
+				</li>
+				<li class="col-xl-3 col-sm-6">
+					<div class="ratio3-4" style="background-image: url('3.jpg');">
+						<div class="overlay title">
+							<a href=""class="title">VIEW MOVIE PAGE</a>
+						</div>
+					</div>
+				</li>
+				<li class="col-xl-3 col-sm-6">
+					<div class="ratio3-4" style="background-image: url('4.jpg');">
+						<div class="overlay title">
+							<a href=""class="title">VIEW MOVIE PAGE</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<div class="textbox">
+				<h2 style="padding-bottom: 0;">OUR OTHER FILMS</h2>
+			</div>
+
+			<ul class="row edges">
+				<li class="col-xl-2 col-lg-4 col-sm-6">
+					<div class="ratio3-4"style="background-image: url('5.jpg');">
+						<div class="overlay title">
+							<a href=""class="title">VIEW MOVIE PAGE</a>
+						</div>
+					</div>
+				</li>
+				<li class="col-xl-2 col-lg-4 col-sm-6">
+					<div class="ratio3-4"style="background-image: url('6.jpg');">
+						<div class="overlay title">
+							<a href=""class="title">VIEW MOVIE PAGE</a>
+						</div>
+					</div>
+				</li>
+				<li class="col-xl-2 col-lg-4 col-sm-6">
+					<div class="ratio3-4"style="background-image: url('7.jpg');">
+						<div class="overlay title">
+							<a href=""class="title">VIEW MOVIE PAGE</a>
+						</div>
+					</div>
+				</li>
+				<li class="col-xl-2 col-lg-4 col-sm-6">
+					<div class="ratio3-4"style="background-image: url('8.jpg');">
+						<div class="overlay title">
+							<a href=""class="title">VIEW MOVIE PAGE</a>
+						</div>
+					</div>
+				</li>
+				<li class="col-xl-2 col-lg-4 col-sm-6">
+					<div class="ratio3-4"style="background-image: url('9.jpg');">
+						<div class="overlay title">
+							<a href=""class="title">VIEW MOVIE PAGE</a>
+						</div>
+					</div>
+				</li>
+				<li class="col-xl-2 col-lg-4 col-sm-6">
+					<div class="ratio3-4"style="background-image: url('10.jpg');">
+						<div class="overlay title">
+							<a href=""class="title">VIEW MOVIE PAGE</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<div class="textbox row">
+				<div class="col-md-6 edges">
+					<h2>LIKE WHAT YOU SEE?</h2>
+				</div>
+				<div class="col-md-6 edges ">
+					<p>
+						<a href="login.html" class="border"style="margin:5px;">LOGIN</a> 
+						to buy tickets today
+					</p>
+				</div>
+			</div>
+		</section>
+
+	</main>
+	
+	<footer class="background-red">
+		<p>
+			Authors: Eric Cho and Overton Wright<br>
+			Course: CSCI 4300<br>
+			Term: Fall 2019<br>
+			Professor: Dr. Ahmadzadeh
+		</p>	
+	</footer>
+
+</body>
+</html>
