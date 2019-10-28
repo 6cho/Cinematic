@@ -71,12 +71,17 @@ function update(){
     let l1 = document.getElementById("label_1");
     let l2 = document.getElementById("label_2");
 
-
+    // NULL values allowed
+    
     l1.innerHTML= ec ? "" : "Email cannot be left empty"; 
     l2.innerHTML= pc ? "" : "Password cannot be left empty";
 
     // ADD SOMETHING THAT CHECKS THE VALIDITY OF EC PC
 
-    if(pc&&ec&&validate(ec,pc,"update")) window.location.href = "profile.html";
+    if(pc&&ec&&validate(ec,pc,"update")) {
+        //update the values that are provided by the user.
+        window.location.href = "profile.html";
 
+
+    }
 }
