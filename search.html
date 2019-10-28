@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Search</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,500,700|Raleway:500,700,900&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,500,700|Raleway:300,500,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<script src="script.js"></script>
 </head>
@@ -16,69 +16,79 @@
 	</header>
 
 	<nav id="nav">		
-		<div style="float:left;"class="text-nav-main title">
-			<a href="index.html" id="titlebtn">CINEMATIC</a>
-		</div>
-		<div style="float:right;"class="text-nav title">
-			 <form id="search" name="search" action="search.html" method="get" >
-				<a href="profile.html">PROFILE</a>
-				<a href="login.html">LOGIN</a>
-                <input type="text" id="searchquery" name="searchquery"class="text-nav border">
-                <input type="submit" id="search_submit" value="SEARCH" onclick="search();"class="text-nav">
-            </form>   
-		</div>
+		<a href="index.html" id="titlebtn">CINEMATIC</a>
+		<form id="search" name="search" action="search.html" method="get" class="float-r">
+			<a href="profile.html">PROFILE</a>
+			<a href="login.html">LOGIN</a>
+        
+            <input type="text" 
+            id="searchquery" 
+            name="searchquery"
+            class="text-nav border"
+            style="width:15vw;">
+            
+            <input type="submit" 
+            id="search_submit" 
+            value="SEARCH" 
+            onclick="search();"
+            class="text-nav">
+        </form>   
 	</nav>
 	
 	<main class="main">
 		
-		<section>		
-			<div class="textbox">
-				<h2 style="padding-bottom:0;">SEARCH RESULTS FOR: </h2>	
-			</div>
-			<ul class="row edges">
-				<li class="col-xl-2 col-lg-4 col-sm-6">
+		<section class="textbox">		
+			<h2>SEARCH RESULTS FOR: </h2>	
+			<div class="row edges">
+				<div class="col-xl-2 col-lg-4 col-sm-6">
 					<div class="ratio3-4"style="background-image: url('5.jpg');">
-						<div class="overlay title">
-							<a href=""class="title">VIEW MOVIE PAGE</a>
+						<div class="overlay">
+							<a href="">VIEW MOVIE PAGE</a>
 						</div>
 					</div>
-				</li>
-				<li class="col-xl-2 col-lg-4 col-sm-6">
+				</div>
+
+				<div class="col-xl-2 col-lg-4 col-sm-6">
 					<div class="ratio3-4"style="background-image: url('6.jpg');">
-						<div class="overlay title">
-							<a href=""class="title">VIEW MOVIE PAGE</a>
+						<div class="overlay">
+							<a href="">VIEW MOVIE PAGE</a>
 						</div>
 					</div>
-				</li>
-				<li class="col-xl-2 col-lg-4 col-sm-6">
+				</div>
+
+				<div class="col-xl-2 col-lg-4 col-sm-6">
 					<div class="ratio3-4"style="background-image: url('7.jpg');">
-						<div class="overlay title">
-							<a href=""class="title">VIEW MOVIE PAGE</a>
+						<div class="overlay">
+							<a href="">VIEW MOVIE PAGE</a>
 						</div>
 					</div>
-				</li>
-				<li class="col-xl-2 col-lg-4 col-sm-6">
+				</div>
+
+				<div class="col-xl-2 col-lg-4 col-sm-6">
 					<div class="ratio3-4"style="background-image: url('8.jpg');">
-						<div class="overlay title">
-							<a href=""class="title">VIEW MOVIE PAGE</a>
+						<div class="overlay">
+							<a href="">VIEW MOVIE PAGE</a>
 						</div>
 					</div>
-				</li>
-				<li class="col-xl-2 col-lg-4 col-sm-6">
+				</div>
+
+				<div class="col-xl-2 col-lg-4 col-sm-6">
 					<div class="ratio3-4"style="background-image: url('9.jpg');">
-						<div class="overlay title">
-							<a href=""class="title">VIEW MOVIE PAGE</a>
+						<div class="overlay">
+							<a href="">VIEW MOVIE PAGE</a>
 						</div>
 					</div>
-				</li>
-				<li class="col-xl-2 col-lg-4 col-sm-6">
+				</div>
+
+				<div class="col-xl-2 col-lg-4 col-sm-6">
 					<div class="ratio3-4"style="background-image: url('10.jpg');">
 						<div class="overlay title">
 							<a href=""class="title">VIEW MOVIE PAGE</a>
 						</div>
-					</div>		
-			</ul>
-			<div class="textbox">
+					</div>	
+				</div>	
+			</div>
+			
 		</section>
 
 	</main>
