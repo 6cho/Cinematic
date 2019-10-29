@@ -59,7 +59,7 @@ p{
 	margin-bottom: 25px;
 }
 
-input[type], a, a:link, a:visited{
+input:not([type='checkbox']), a, a:link, a:visited{
 	all:unset;
 	line-height: 40px;
   	letter-spacing: 2.5px;
@@ -184,31 +184,19 @@ header{
 }
 
 
-
 .card {
-    width: 100px;
-    margin: 10px auto;
-    display: inline-block;
-    padding: 0px 0px;
-    background-color: rgb(40, 40, 51);
-    border-radius: 4px;
+    height: 0;
+    padding-bottom: 100%;
+    background-color: rgb(50, 110, 50);
+   
 }
 
 .card .checkbox {
-    float: left;
-    width: 20%;
-    box-sizing: border-box;
-    text-align:center;
-  	padding: 40px 0px;
+   
 }
 
 .textlabel {
-    clear: both;
-    padding: 22px 0px 0px 0px;
-    font-size: 16px;
-    color: rgba(236, 228, 228, 0.6);
-    font-weight: 300;
+
 }
 .first{
-	float:left;
 }
