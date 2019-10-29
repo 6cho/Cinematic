@@ -3,7 +3,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 	text-align: left;
-	font-size: calc(10px + .15vw);
+	font-size: 13.5px;
 	line-height: 20px;
 	letter-spacing: 1.3px;
 	color:white;
@@ -11,8 +11,9 @@ body{
 
 footer{
 	width:100%;
+	text-align:right;
 	padding:10vh calc(10vw + 5px) 9vh;
-	text-align: right;
+	font-size: 12px;
 }
 
 nav{
@@ -20,7 +21,7 @@ nav{
 	width:100%;
 	height:50px;
 	background-color: rgba(20,20,20,.8);
-	padding:0 5px;
+	padding:0 .5vw;
 	position: fixed;
     top: 0;
 }
@@ -29,72 +30,55 @@ main{
 	padding:0 10vw;
 }
 
-h1,h2,h3,nav,input[type], a, a:link, a:visited{
+h1,h2,h3,.title{
+	font-weight: 700;
 	font-family: 'Raleway', sans-serif;
-	font-weight: 500;
 }
 
 h1{
 	line-height:50px;
-	letter-spacing: 18px;
-	font-size: 36px;
+	letter-spacing: 10px;
+	font-size: 40px;
 	font-weight: 700;
 }
 
 h2{
 	line-height:50px;
-	letter-spacing: 8px;
-	font-size: 20px;
-	padding-bottom: 10vh;
-	
+	letter-spacing: 7px;
+	font-size: 22px;
+	font-weight: 700;
 }
 
 h3{
 	line-height:50px;
 	letter-spacing: 4px;
 	font-size: 16px;
+	font-weight: 700;
 }
 
-p{
-	margin-bottom: 25px;
-}
 
-input[type], a, a:link, a:visited{
-	all:unset;
-	line-height: 40px;
-  	letter-spacing: 2.5px;
-  	color:white;
-  	padding:0 1.5vw;
-    margin:4px 0;
-    text-align: center;
-    display: inline-block;
-    transition-duration: .2s;
-    cursor: pointer;
-}
-
-input[type=text],input[type=email],input[type=password]{
-	text-align: left;
-	line-height: 30px;
-  	width:calc(100% - 22px);
-  	padding:5px 10px;
+a:link, a:visited, input[type=submit], input[type=button]{
+  all:unset;
+  padding:0 1.5vw;
+  margin:5px 0;
+  text-align: center;
+  display: inline-block;
+  transition-duration: .2s;
+  line-height: 40px;
+  cursor: pointer;
 }
 
 a:hover, input:hover{
-    background-color: rgba(250,100,100,.3);
+  background-color: rgba(250,100,100,.5);
 }
 
-input[type]:focus{
-    background-color: rgb(50,50,50);
+input[type=text]:focus, input[type=email]:focus,input[type=password]:focus{
+  background-color: rgb(50,50,50);
 }
 
-::placeholder{
-	color:white;
-}
-
-#titlebtn{
-	font-weight: 700;
-	font-size: calc(12px + .2vw);
-	letter-spacing: 4px;
+.textbox p,h2{
+	padding-bottom: 10vh;
+	margin:0;
 }
 
 .textbox{
@@ -112,6 +96,34 @@ input[type]:focus{
 	color:rgb(250,100,100);
 }
 
+input[type=text],input[type=email],input[type=password] {
+  background-color: rgb(30,30,30);
+  height:40px;
+  width:calc(16px + 12vw);
+  padding:5px;
+  color:white;
+ 
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+   -webkit-box-shadow: 0 0 0px 1000px rgb(30,30,30) inset;
+  transition: background-color 5000s ease-in-out 0s;
+
+}
+
+::placeholder{
+	color:white;
+}
+
 .border{
 	border:solid white 1px;
 }
@@ -123,13 +135,40 @@ header{
     background-position: center;
     background-color: rgb(20,20,20);
     height:75vh;
-    opacity:0.95;
+    opacity:0.9;
     text-align: center;
     padding-top: calc(37.5vh - 30px);
 }
 
+ul{
+	list-style:none;
+}
+
 .col-md-6,.col-md-3,.col-sm-6{
 	padding:5px;
+}
+
+.edges{
+	margin:0;
+	padding:0;
+}
+
+.text-nav{
+	font-size: calc(10px + .15vw);
+	letter-spacing: 2px;
+}
+
+.text-nav-main{
+	font-size: calc(14px + .5vw);
+	letter-spacing: 3px;
+}
+
+.text-black{
+	color:black;
+}
+
+.ratio1-1{
+	padding-bottom:100%;
 }
 
 .ratio3-4{
@@ -153,32 +192,82 @@ header{
 }
 
 .overlay a{
-	width: 100%;
+	width: calc(100% - 0px);
+	padding:0;
 	line-height: calc(150px);
+	margin:0;
 }
 
-.edges, .overlay a{
-	margin:0;
-	padding:0;
+.block{
+	display: block;
+}
+
+.mar-bottom-0{
+	padding-bottom: 0;
 }
 
 .mar-bottom-1{
 	margin-bottom: 1vh;
 }
 
+.mar-bottom-5{
+	margin-bottom: 5vh;
+}
+
+.mar-bottom-10{
+	padding-bottom: 10vh;
+}
+
+section{
+	max-width:100%;
+}
+
 .center{
 	text-align: center;
 }
 
-#profile p{
+
+
+
+table,td,tr{
+	margin:0;
 	padding:0;
-	line-height: 50px;
 }
 
-.float-l{
+td{
+	width:50%;
+}
+
+
+table{
+	width:100%;
+}
+
+
+.card {
+    width: 100px;
+    margin: 10px auto;
+    display: inline-block;
+    padding: 0px 0px;
+    background-color: rgb(40, 40, 51);
+    border-radius: 4px;
+}
+
+.card .checkbox {
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+    text-align:center;
+  	padding: 40px 0px;
+}
+
+.textlabel {
+    clear: both;
+    padding: 22px 0px 0px 0px;
+    font-size: 16px;
+    color: rgba(236, 228, 228, 0.6);
+    font-weight: 300;
+}
+.first{
 	float:left;
-}
-
-.float-r{
-	float:right;
 }
