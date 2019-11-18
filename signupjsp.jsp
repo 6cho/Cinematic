@@ -10,14 +10,14 @@
     String password = request.getParameter("pass");
     String passwordConfirm = request.getParameter("pass-confirm");
 
-    String dbURL = "jdbc:mysql://localhost/";
+    String dbURL = "jdbc:mysql://localhost/movieDatabaseSchema";
     String query = "INSERT INTO user 
     (uid, email, pass, fname, lname, cid, isAdmin)
     VALUES
     (?, ?, ?, ?, ?, ?, ?)"; // missing uid and cid
 
 try {
-    Connection connection = DriverManager.getConnection(dbURL, "root", "12345");
+    Connection connection = DriverManager.getConnection(dbURL);
     PreparedStatement pstmt = connection.prepareStatement( query );
     pstmt.setString(1, ); //missing uid
     pstmt.setString(2, userEmail);
