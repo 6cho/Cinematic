@@ -32,6 +32,7 @@ main{
 h1,h2,h3,nav,input[type], a, a:link, a:visited{
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
+	margin:0;
 }
 
 h1{
@@ -139,6 +140,13 @@ header{
     opacity: .9;
 }
 
+.ratio1-1{
+	padding-bottom:100%;
+	background-size: cover;
+    background-position: center;
+    opacity: .9;
+}
+
 .overlay{
 	transition-duration: .2s;
 	width:calc(100% - 10px);
@@ -191,12 +199,18 @@ header{
    
 }
 
-.card .checkbox {
-   
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  margin-top: 10vh;
 }
-
-.textlabel {
-
-}
-.first{
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
 }
